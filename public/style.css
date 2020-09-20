@@ -1,0 +1,41 @@
+
+* {
+    font-family: sans-serif;
+}
+
+.stage {
+    background-color: #dadada;
+    position: relative;
+    border-radius: 16px;
+}
+
+.stage-disabled {
+    background-color: #ddd;
+    opacity: 0.2;
+}
+
+.stage .stageNumber {
+    float: left;
+    left: 0;
+    top: 0;
+    font-size: 5em;
+    opacity: 0.2;
+}
+
+.stage-separator .MuiSvgIcon-root {
+    width: 4em;
+    height: 4em;
+}
+
+.stage-separator-disabled {
+    opacity: 0.2;
+}
+
+.MuiDropzoneArea-root {
+    background-color: transparent !important;
+}
+
+.stageTitle {
+    font-size: x-large;
+    font-weight: bold;
+}
