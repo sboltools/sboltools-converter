@@ -1,7 +1,5 @@
 FROM node:12
 
-RUN npm install -g yarn
-
 COPY package*.json /opt/
 RUN cd /opt && yarn install
 
