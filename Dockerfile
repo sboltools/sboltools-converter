@@ -1,15 +1,14 @@
 FROM node:12
 
+RUN npm install -g yarn
+
 COPY package*.json /opt/
-RUN cd /opt && npm install
-RUN ls -hl /opt
-RUN ls -hl /opt/node_modules
-RUN ls -hl /opt/node_modules/sbolgraph
+RUN cd /opt && yarn install
 
 COPY . /opt/
 
-RUN cd /opt && npm run build
+RUN cd /opt && yarn run build
 
-ENTRYPOINT ["/bin/bash", "-c", "cd /opt && npm run dev"]
+ENTRYPOINT ["/bin/bash", "-c", "cd /opt && yarn run dev"]
 
 
