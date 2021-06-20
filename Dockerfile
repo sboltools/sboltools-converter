@@ -1,6 +1,9 @@
-FROM node:14
+FROM node:16
+RUN yarn set version berry
 
 COPY package*.json /opt/
+
+
 RUN cd /opt && yarn install
 
 RUN ls -hl /opt
