@@ -1,5 +1,4 @@
-FROM node:16
-RUN yarn set version berry
+FROM node:14
 
 COPY package*.json /opt/
 
