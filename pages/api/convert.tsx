@@ -1,4 +1,5 @@
-import { SBOL1GraphView, SBOL2GraphView, SBOL3GraphView, SBOLImporter } from "sbolgraph"
+import { SBOL1GraphView, SBOL2GraphView, SBOL3GraphView } from "sbolgraph"
+import SBOLImporter from "../../src/SBOLImporter"
 
 export default async function convert(req, res) {
 

@@ -16,7 +16,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-dropzone": "^11.2.0",
-    "sbolgraph": "^0.40.0"
+    "sbolgraph": "^0.41.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.49",

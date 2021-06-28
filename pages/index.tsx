@@ -4,10 +4,11 @@ import Head from 'next/head'
 
 
 import React, {useMemo} from 'react';
-import { SBOL1GraphView, SBOL2GraphView, SBOL3GraphView, SBOLImporter } from 'sbolgraph';
+import { sbol1, SBOL1GraphView, SBOL2GraphView, SBOL3GraphView } from 'sbolgraph';
 import SBOLDropzone from '../components/SBOLDropzone';
 
 import FileSaver from 'file-saver'
+import SBOLImporter from '../src/SBOLImporter';
 
 
 interface Props {
@@ -104,7 +105,7 @@ export default class Home extends React.Component<Props, State> {
 
     for(let f of files) {
 
-      let src = await f.text()
+      let src = await (f as any).text()
 
       switch(this.state.target) {
         case 'sbol1':
